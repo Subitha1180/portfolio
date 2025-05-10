@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subitha G | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a0dad, #8e44ad);
+      background-image: url('hi.png');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-overlay h1,
+    .header-overlay p,
+    .social-links {
+      animation: fadeInUp 1s ease-out;
+      animation-fill-mode: both;
+    }
+
+    .header-overlay h1 { animation-delay: 0.3s; }
+    .header-overlay p { animation-delay: 0.5s; }
+    .social-links { animation-delay: 0.7s; }
+
+    .social-links a {
+      color: #b388eb;
+      margin: 0 1rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav {
+      text-align: center;
+      background: #1a1a1a;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #d0b3ff;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #61398f;
+      padding-bottom: .5rem;
+      margin-bottom: 1.5rem;
+      color: #dcd0ff;
+    }
+
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 1rem; }
+
+    .skills-bar {
+      background: #2a2a2a;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .skills-bar-fill {
+      height: 20px;
+      line-height: 20px;
+      background: linear-gradient(90deg, #7d5fff, #c56cf0);
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      width: 0;
+      animation: fillBar 2s forwards;
+    }
+
+    @keyframes fillBar {
+      from { width: 0; }
+      to { width: var(--width); }
+    }
+
+    .project {
+      background: #111;
+      padding: 1rem;
+      border-left: 5px solid #8e44ad;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    a {
+      color: #b388eb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-overlay">
+      <img src="subi.jpg" alt="Profile Picture" class="profile-img">
+      <h1>Subitha G</h1>
+      <p>Full-stack Developer | CS Undergraduate | Tech Enthusiast</p>
+      <div class="social-links">
+        <a href="mailto:subithavimala@gmail.com">Gmail</a>
+        <a href="https://github.com/Subitha1180" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/subitha-g" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>To obtain a challenging position as a Full Stack Developer where I can apply my skills in front-end and back-end development, contribute to impactful projects, and continuously grow by learning new technologies. I aim to be part of a dynamic team that values innovation, collaboration, and professional growth</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Languages</p>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 90%;">Python</div></div>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 70%;">JavaScript</div></div>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 80%;">Java</div></div>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 75%;">C</div></div>
+    <p>Tools & Frameworks</p>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 90%;">ReactJS</div></div>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 85%;">Node.js</div></div>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 70%;">Firebase</div></div>
+    <div class="skills-bar"><div class="skills-bar-fill" style="--width: 80%;">MongoDB</div></div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="agriculture.jpg" alt="Growing Agro Project Screenshot">
+      <h3>Growing Agro – Smart Farming Using ML</h3>
+      <p>This is a smart farming mobile application that helps farmers detect crop diseases and receive weather forecasts using machine learning. Built with React Native, Node.js, TensorFlow.js, and Supabase, the app also includes a feature for expert consultation via chat.</p>
+      <a href="https://github.com/Subitha1180/growing-agro-smart-farming.git" target="_blank" class="project-link">GitHub</a>
+    </div>
+
+    <div class="project">
+      <img src="toilet.png" alt="IoT Toilet Alert System Screenshot">
+      <h3>IoT-Based Smart Toilet Alert System</h3>
+      <p>The toilet-alert-generating-system is a smart toilet monitoring prototype built using Java, Python, C, Firebase, and HTML. It uses IoT sensors to track occupancy, cleanliness, and the presence of harmful gases in public toilets. Alerts are sent via LED indicators, buzzers, or SMS when abnormal conditions are detected. </p>
+      <a href="https://github.com/Subitha1180/toilet-alert-generating-system.git" target="_blank" class="project-link">GitHub</a>
+    </div>
+
+    <div class="project">
+      <img src="shop.jpg" alt="Online Shopping System Screenshot">
+      <h3>Online Shopping System</h3>
+      <p>This project is a full-stack e-commerce web application built with React.js (frontend), Node.js and Express.js (backend), and MongoDB (database). It features user authentication, product browsing, shopping cart functionality, order processing, and an admin panel for managing products and orders. The codebase is organized into separate frontend and backend folders and is designed to be run locally. It demonstrates solid skills in modern web development and system architecture.</p>
+      <a href="https://github.com/Subitha1180/ecommerce.git" target="_blank" class="project-link">GitHub</a>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Web Development Intern - CodeBlind Technologies (Jan 2024)</strong></p>
+    <ul>
+      <li>Built responsive web interfaces using React.js and modern frontend technologies</li>
+      <li>Developed full-stack applications with Node.js and MongoDB</li>
+      <li>Utilized Git and GitHub for version control</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Bronze Medal (4×400m), Silver Medal (800m) in athletics</li>
+      <li>NPTEL IoT Certification, ICT Academy Learnathon, TCS iON, Microsoft Azure Cloud, MongoDB Atlas</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:subithavimala@gmail.com">subithavimala@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Subitha1180" target="_blank">github.com/Subitha1180</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/subitha-g" target="_blank">linkedin.com/in/subitha-g</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Subitha G. All rights reserved.</p>
+  </footer>
+</body>
+</html>
